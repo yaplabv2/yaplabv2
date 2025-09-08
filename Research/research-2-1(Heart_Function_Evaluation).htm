@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Advancements to Heart Function Evaluation</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards & Common */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25)}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tag{font-size:11px;border:1px solid var(--border);padding:4px 8px;border-radius:999px;color:#cbd5e1;background:linear-gradient(180deg,#0f1522,#0d1420)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+.backlink{font-size:14px}
+
+/* Images */
+.hero-img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+
+/* Grid helpers */
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Equations (placeholders or MathJax containers) */
+.eq{display:block;border:1px dashed var(--border);border-radius:10px;padding:10px 12px;margin:8px auto;text-align:center;background:linear-gradient(180deg,#0f1522,#0d1420);color:#e5e7eb;max-width:720px}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#efc">EFc</a>
+      <a href="#prognosis">Prognosis</a>
+      <a href="#strain">3D Fetal Strain</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Advancements to Heart Function Evaluation</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== Motivation ===== -->
+  <section id="motivation" class="anchor">
+    <div class="card">
+      <div class="section-title">Motivation</div>
+      <p class="card-desc">
+        Echocardiography evaluation of cardiac function is important to diagnose, prognose and time intervention. Several current echocardiography approaches to evaluating cardiac function have limitations. We worked to improve several of them.
+      </p>
+  </section>
+
+  <!-- ===== EFc Section ===== -->
+  <section id="efc" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">The Corrected Ejection Fraction (EFc)</div>
+      <p class="card-desc">
+        The Ejection Fraction (EF) is widely used clinically to evaluate cardiac health, as low EF can indicate poor outcomes and the need for treatment. However, EF is affected by geometric changes to the heart due to cardiac remodelling, and in such instances, is no longer a good indicator of function. For example, EF tend to be high in hypertrophic hearts, and this prevented it from indicating a low cardiac function during HFpEF (heart failure preserved ejection fraction) hearts. We developed a corrected EF, called the EFc, that resolves this dependency on cardiac geometry, and showed that it can distinguish healthy and HFpEF heart. We also showed that EFc has improved ability for prognosis of re-hospitalization due to heart failure.
+      </p>
+      <p class="card-desc">
+        Our proposed EFc is equivalent to computing EF at the mid-wall location (between endocardial and epicardial boundaries), rather than computing it at the endocardial boundary. It can be calculated from routine echo scan parameters as:
+      </p>
+
+      <img class="hero-img" src="Image/research-2-1-1.png" alt="E1 & E2" onerror="this.src='Image/Research/placeholder.jpg'">
+
+      <p class="card-desc">
+        EDV is the LV end-diastolic volume, and r is the density of myocardium, and LVM is the left ventricular mass, which can be calculated via the Devereux formulae.
+      </p>
+
+      <p class="card-desc">
+        We used a computational model to study the midwall-EF measure, we find that when the heart is thickened with no change to contractile strain, EF tend to increase, and when the heart is dilated with no change to strain, EF tend to decrease. EFc, on the other hand, is independent of these geometric changes. We also find that using the mid-wall EF, we can distinguish between HFpEF and Healthy hearts from an animal model of HFpEF, and from clinical data.
+      </p>
+
+      <div class="grid-2">
+        <div>
+          <img class="hero-img" src="Image/research-2-1-2.jpg" alt="EF vs EFc geometric dependence" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Using a computational model, we gauged whether geometric changes to the left ventricle (thickening of walls and dilating the chamber) at no change to the contractile strain will cause changes to EF or EFc. We find that EF is geometrically dependent, while EFc is not.</em></p>
+        </div>
+        <div>
+          <img class="hero-img" src="Image/research-2-1-3.jpg" alt="Mid-wall EF separates HFpEF vs healthy" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Using Mid-wall EF, we can distinguish HFpEF failing heart cases from healthy hearts, while using traditional endocardial EF, this cannot be done.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Prognosis Section ===== -->
+  <section id="prognosis" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Prognostic Value: EF vs EFc</div>
+      <p class="card-desc">
+        We performed cox proportional regression modelling to test EF and EFc's relative prognosis value in predicting re-hospitalization due to heart failure within 3 years, in a cohort of 2752 patients. We find that in the sub-cohort where EF is in the normal range (&gt; 50%), using EFc rather than EF in the model increased true positive by 12.2% and decreased false negative by 16.6. ROC analysis showed 18.6% reduced error in predicting readmissions with EFc rather than EF. This suggested that EFc had a better accuracy in predicting re-hospitalization outcomes.
+      </p>
+
+      <img class="hero-img" src="Image/research-2-1-4.jpg" alt="ROC curve EF vs EFc" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>3 years non-admission ROC curve for patients with ejection fraction ≥ 50 using a leave one out cross validation of various predictive models, "Baseline" is a cox proportional hazards regression model where risk of readmissions due to heart failure within 3 years is predicted from age, gender and blood creatinine data. "Baseline+EF" is the model where EF is added as predictor, while "Baseline+EFc" is where EFc is added as a predictor. The area under the curve (AUC) is given in the legend. p-value = 0.007.</em></p>
+
+      <div class="hr"></div>
+      <div class="row" style="justify-content:space-between">
+        <div class="card-desc" style="margin:0">
+          Zheng Y, Chan WX, Charles CJ, Richards AM, Sampath S, Ali AAB, Leo HL and Yap CH. <strong>Effects of Hypertrophic and Dilated Cardiac Geometric Remodeling on Ejection Fraction.</strong> Frontiers in Physiology, 2022:1068.
+        </div>
+        <a class="btn btn-small" href="https://pubmed.ncbi.nlm.nih.gov/35711303/" target="_blank" rel="noreferrer">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 3D Fetal Strain Section ===== -->
+  <section id="strain" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">3D Echocardiographic Fetal Heart Strain Measurements</div>
+      <p class="card-desc">
+        We used our cardiac motion tracking algorithm on fetal echocardiography images, to compare and understand the differences between 2D versus 3D strain measurements. 2D images were directly extracted from 3D fetal echo images for controlled experiments, the same algorithm was used to track both types of strains. We find that 2D longitudinal strains are underestimated in the LV compared to 3D strains, while 2D circumferential strains were overestimated in the LV, RV and septum compared to 3D strains.
+      </p>
+
+      <img class="hero-img" src="Image/research-2-1-5.jpg" alt="LS&CS" onerror="this.src='Image/Research/placeholder.jpg'">
+
+      <p class="card-desc">
+        We discovered basic mechanisms that can explain specific biased differences between 2D and 3D echo strain measurements. One such mechanism was the twisting and apical motion of the LV during contraction, as explained below. Another was that the timing at which the circumferential length and the longitudinal length was mismatched. 3D measurements needed a single time frame for zero strain reference, while 2D could have separate time frames for longitudinal and circumferential strains. Thus there are essential biases in 2D measurements, and 2D strain values should be interpreted with care during cardiac function evaluation.
+      </p>
+
+      <div class="grid-2">
+        <div>
+          <img class="hero-img" src="Image/research-2-1-6.png" alt="2D vs 3D longitudinal" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Measurements of LV longitudinal strain is always higher in 2D than 3D, because of LV twisting preserves the length of the myocardium during longitudinal shortening.</em></p>
+        </div>
+        <div>
+          <img class="hero-img" src="Image/research-2-1-7.png" alt="2D vs 3D circumferential" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Measurements of LV circumferential strain is always lower in 2D than 3D, due to the motion of the LV towards the apex during contractions. This apical motion brings about a wider slice of the LV into the imaging plane to negate circumferential contractions in 2D scans.</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="row" style="justify-content:space-between">
+      <div>© Yap Lab</div>
+      <div class="row" style="gap:12px">
+        <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+        <a href="#top" onclick="history.back();return false;" style="color:var(--muted)">Back ↩</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

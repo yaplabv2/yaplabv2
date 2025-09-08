@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Virtual Reality Fetal Echo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);margin-top:18px}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.tag{font-size:11px;border:1px solid var(--border);padding:4px 8px;border-radius:999px;color:#cbd5e1;background:linear-gradient(180deg,#0f1522,#0d1420)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+.hero-img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+
+/* Grid for images */
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#overall">Overall</a>
+      <a href="#normal">Normal Hearts</a>
+      <a href="#tof">TOF</a>
+      <a href="#fem">FEM</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Virtual Reality Fetal Echo</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Overall -->
+  <section id="overall" class="anchor">
+    <div class="card">
+      <div class="section-title">Overall Methodology</div>
+      <p class="card-desc">
+        Our methodology is to obtain 4D clinical ultrasound images of human fetal hearts (STIC mode). An in-house image-registration technique extracts cyclic cardiac wall motions with accurate stroke volume. Dynamic mesh CFD simulations provide fluid forces and patterns, while FEM models myocardial stresses and cardiac function.
+      </p>
+      <img class="hero-img" src="Image/research-3-2-1.jpg" alt="overall" onerror="this.src='Image/Research/placeholder.jpg'">
+    </div>
+  </section>
+
+  <!-- Normal Fetal Hearts -->
+  <section id="normal" class="anchor">
+    <div class="card">
+      <div class="section-title">Fluid Dynamics of Normal Fetal Hearts</div>
+      <p class="card-desc">
+        Studies have been conducted on the normal left ventricle (LV) and right ventricle (RV) at 22 weeks and 32 weeks old time points. Common flow features were observation In most hearts hearts, such as a pair of diastolic vortex rings corresponding to the E- and A-wave, which interacted with each other via vortex merging or leapfrogging, and which exited the heart before complete dissipation. The vortex rings were the primary mechanism of elevated wall shear stress stimuli on the fetal ventricular walls, since they bring faster moving fluid close to the walls.
+      </p>
+      <p class="card-desc">
+        We further discovered that most fetal hearts have a forward contraction wave, where myocardial contraction and relaxation occurs in a wave from the inlet region to the outlet region, and this was found to reduce energy needed for ejection.
+      </p>
+      <img class="hero-img" src="Image/research-3-2-2.gif" alt="Normal fetal CFD" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Computational Fluid Dynamics Simulations of a 22 weeks old human fetal right ventricle based on 4D STIC clinical ultrasound images, demonstrating iso-vorticity surfaces and wall shear stresses (as colour contours)</em></p>
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Wiputra H, Lai CQ, Lim GL, Heng JJW, Guo L, Soomar SM, Leo HL, Biswas A, Mattar CNZ, Yap CH. <strong>Fluid Mechanics of Human Fetal Right Ventricles from Image-Based Computational Fluid dynamics Using 3D Clinical Ultrasound Scans.</strong> Am J Physiol Heart Circ Physiol, 2016;311(6):H1498-508. <br>
+        </div>
+        <a class="btn btn-small" href="https://pubmed.ncbi.nlm.nih.gov/27663769/" target="_blank">Paper ↗</a>
+        <div class="card-desc" style="margin:0">
+          Wiputra H, Lim GL, Chu KC, R Nivetha, Soomar SM, Biswas A, Mattar CNZ, Leo HL, Yap CH. <strong>Peristaltic-Like Motion of the Human Fetal Right Ventricle and its Effects on Fluid Dynamics and Energy Dynamics.</strong> Ann Biomed Eng, 2017;45(10):2335-47.
+        </div>
+        <a class="btn btn-small" href="https://pubmed.ncbi.nlm.nih.gov/28721492/" target="_blank">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOF -->
+  <section id="tof" class="anchor">
+    <div class="card">
+      <div class="section-title">Fluid Dynamics of Fetal Hearts with Tetralogy of Fallot</div>
+      <p class="card-desc">
+        We applied our computational techniques on human fetal hearts with Tetralogy of Fallot, to understand essential changes to fluid mechanics in this disease. Among our discoveries were the presences of RV-to-LV diastolic shunting which disrupts diastolic vortex rings in the LV, excessive flow rates and chaotic flow patterns in the RV leading to high wall shear stresses compared to normal hearts, elevation of pressures to the same extent in both ventricular chambers above normal hearts, and higher work done necessary for ejection due to outflow obstruction. Some TOF cases we investigated had prenatal RV hypertrophy, and this might be related to elevated RV wall shear stresses, since pressures in both chambers seemed to equilibrate via the septal defect.
+      <img class="hero-img" src="Image/research-3-2-3.gif" alt="TOF CFD" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Computational Fluid Dynamics Simulations of a 32 weeks old human fetal heart with Tetralogy of Fallot, based on 4D STIC clinical ultrasound images. Iso-vorticity surfaces and wall shear stresses (as colour contours) are displayed.</em></p>
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Wiputra H, Chen CK, Talbi E, Lim GL, Soomar SM, Biswas A, Mattar CNZ, Bark D, Leo HL, Yap CH. <strong>Human Fetal Hearts with Tetralogy of Fallot have Altered Fluid Dynamics and Forces.</strong> Am J Physiol Heart Circ Physiol, 2018;315(6):H1649-59.
+        </div>
+        <a class="btn btn-small" href="https://pubmed.ncbi.nlm.nih.gov/30216114/" target="_blank">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEM -->
+  <section id="fem" class="anchor">
+    <div class="card">
+      <div class="section-title">Finite Element Simulation of Fetal Aortic Stenosis</div>
+      <p class="card-desc">
+        We developed a fetal heart finite element model (FEM), based on reconstructions from 4D clinical fetal echocardiography. This model modelled spatially varying myofiber orientations, both passive hyperelastic tissue mechanical properties and active tension, and a fetal Windkessel model. We validated that our FEM model reflected the cardiac motion imaged from ultrasound scans closely. We then investigated tweaked the model to reflect conditions during fetal aortic stenosis and evolving HLHS. In this condition, fetal aortic stenosis will cause high LV pressures, mitral regurgitation, drastically reduced LV stroke volume. By birth, a majority of such cases will become HLHS. We strive to understand the biomechanics of this disease.
+      <div class="grid-2">
+        <div>
+          <img class="hero-img" src="Image/research-3-2-4.jpg" alt="FEM schematic" onerror="this.src='Image/Research/placeholder.jpg'">
+          <img class="hero-img" src="Image/research-3-2-5.gif" alt="FEM schematic" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Schematic of fetal LV FEM and sample simulation output.</em></p>
+        </div>
+        <div>
+          <img class="hero-img" src="Image/research-3-2-6.jpg" alt="FEM results" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Effect of (A-C) LV wall thickening, and (D-F) increasing LV stiffness, on the (A,D) PV loop, (B,E) temporal-peak, spatial-averaged circumferential strain and longitudinal strain, and (C,F) temporal-peak, spatial-averaged myocardial stress in the fiber direction.</em></p>
+        </div>
+      </div>
+      <p class="card-desc">From our modelling results, Fetal aortic stenosis alone elevated pressures by 10-20 mmHg and could decimate stroke volume, and mitral regurgitation reduced this elevation. Stenosis alone, however, did not lead to mitral regurgitation velocities matching those measured clinically, and only when myocardial wall hypertrophy is modelled could we achieve this match. Typical extent of LV hypertrophy, however, resulted in excessive LV pressures well above clinical measurements, thus suggesting that reduction of myocardial contractility also accompanied the disease. Increasing the passive stiffness of the LV, however, did very little to affect heart function, suggesting that fibroelastosis is a by-product of the disease, and does not impede heart function.</p>
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Ong CW, Ren M, Wiputra H, Mojumder J, Chan WX, Tulzer A, Tulzer G, Buist ML, Mattar CNZ, Lee LC, Yap CH. <strong>Biomechanics of Human Fetal Hearts with Critical Aortic Stenosis.</strong> Ann Biomed Eng, 2020 Nov 11:1-6.
+        </div>
+        <a class="btn btn-small" href="https://pubmed.ncbi.nlm.nih.gov/33175989/" target="_blank">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future -->
+  <section id="future" class="anchor">
+    <div class="card">
+      <div class="section-title">Future Work</div>
+      <p class="card-desc">
+        We are currently studying the biomechanics of fetal aortic stenosis to understand why it has a high likelihood of causing HLHS at birth. We are also investigating fetal aortic balloon valvuloplasty and other fetal heart interventions, to understand their effects on the fetal heart function, biomechanics, and development, so as to help improve these interventions.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div>© Yap Lab</div>
+      <div><a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a></div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

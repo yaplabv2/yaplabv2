@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Embryonic Heart Biomechanics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);margin-top:18px}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+
+/* Media */
+.media{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#intro">Overall</a>
+      <a href="#ultrasound">4D Ultrasound</a>
+      <a href="#cfd-ventricle">CFD</a>
+      <a href="#av">AV Dynamics</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Embryonic Heart Biomechanics</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- Intro -->
+  <section id="intro" class="anchor">
+    <div class="card">
+      <div class="section-title">Overview & Motivation</div>
+      <p class="card-desc">
+        The embryonic heart is the first organ to develop. It undergoes a fascinating developmental process, starting out as a simple tube and develops into a 4-chamber structure by week 8 of gestation. We hypothesize that mechanical forces are important stimuli to proper early cardiac development, seek to understand the biomechanics of the embryonic heart via novel imaging, image processing, and biomechanics simulations.
+      </p>
+      <p class="card-desc">
+        Our approach was to employ high frequency ultrasound imaging and processing, apply image registration and other mathematical modelling to extract and define cardiac movements, and then perform dynamic mesh computational fluid dynamics will be performed to understand embryonic heart flow patterns and forces.
+      </p>
+    </div>
+  </section>
+
+  <!-- 4D Ultrasound -->
+  <section id="ultrasound" class="anchor">
+    <div class="card">
+      <div class="section-title">4D Ultrasound Imaging of Small Animal Embryos</div>
+      <p class="card-desc">
+        In ultrasound images of small animal embryos, there is a lack of contrast between blood and tissue spaces, however, blood spaces has dynamic speckles while tissue spaces has persistent ones. We thus developed a technique to use ensemble averaging using quadratic means to differential between tissue and blood spaces. This way, we could reconstruct the 4D dynamic motions of the embryonic heart, and demonstrated this in the chick embryo. We are applying the same technique in rat embryos and will share this soon.
+      </p>
+
+      <img class="media" src="Image/research-4-1-1.jpg" alt="Raw ultrasound 4.5d chick & Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>(Left) raw ultrasound images of a 4.5 days chick embryo. (right) the same image after image processing to distinguish blood and tissue pixels.</em></p>
+
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-4-1-2.gif" style="max-width:73%;height:auto;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-4-1-3.gif" style="max-width:60%;height:auto;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+      <p class="card-desc"><em>Reconstruction of the Dynamic Motion of the (left) 4.5 days and the (right) 5.5 days chick embryonic heart, obtained using phase averaging of ultrasound images, and spatial and temporal correlation. LA: left atria, RA: right atria, LV: left ventricle, RV: right ventricle, OFT: outflow tract.</em></p>
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Tan GXY, Jamil M, Tee NGZ, Zhong L, Yap CH. <strong>3D Reconstruction of Chick Embryo Vascular Geometry Using Non-Invasive High-Frequency Ultrasound for CFD.</strong> Ann Biomed Eng, 2015;43(11):2780–2793. <br>
+          <a class="btn btn-small" target="_blank" href="https://link.springer.com/article/10.1007/s10439-015-1339-y">Paper ↗</a>
+        </div>
+        
+        <div class="card-desc" style="margin:0">
+            Ho S, Tan GXY, Foo TJ, Phan-Thien N, Yap CH. <strong>Organ Dynamics and Fluid Dynamics of the HH25 Chick Embryonic Cardiac Ventricle as Revealed by a Novel 4D High-Frequency Ultrasound Imaging Technique and Computational Flow Simulations.</strong> Ann Biomed Eng, 2017;45(10):2309–23.
+            <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28744840/">Paper ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CFD – Ventricle -->
+  <section id="cfd-ventricle" class="anchor">
+    <div class="card">
+      <div class="section-title">Computational Fluid Dynamics of Chick Embryonic Ventricle and Outflow Tract</div>
+      <p class="card-desc">
+        Using this imaging technique, we performed dynamic mesh CFD flow simulations, and discovered that there were magnitude differences in the wall shear stresses between the left side and right side of the embryonic ventricle, which could play a role into the different morphology of the RV and LV walls.
+      </p>
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-4-1-4.gif" alt="Ventricle WSS" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <p class="card-desc"><em>Results of CFD Flow Simulations of a 4.5 days old chick embryonic heart, demonstrating the wall shear stresses.</em></p>
+        </div>
+      </div>
+      
+      <p class="card-desc">We further performed CFD of the outflow tract at 4.5 days gestation, and found that the there's excessive oscillatory wall shear stresses at the outflow tract cushions, which could be important stimuli for their eventual development into heart valves and aortico-pulmonary septum. Further, we discovered that there's a double helical flow structure during peak flow phases, which have similarities to the geometry of the aortico-pulmonary septum, suggesting the possibility that flow is guiding the septation. This work is currently being published.</p>
+      
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-4-1-5.gif" alt="Ventricle WSS" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <p class="card-desc"><em>Results of CFD Flow Simulations of a 4.5 days old chick embryonic cardiac outflow tract, demonstrating flow velocities vectors and magnitude.</em></p>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-4-1-6.png" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-4-1-7.png" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+      <p class="card-desc"><em>(left) Plots of Streamwise wall shear stress versus cardiac cycle time. (right) Oscillatory index at various locations of the outflow tract walls. Vertical dotted lines are the location of outflow tract cushions, while and black curved dotted lines represent the outer and inner curvatures.</em></p>
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-4-1-8.png" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-4-1-9.png" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+      <p class="card-desc"><em>At the time point just before septation (4.5 days gestation), the outflow tract featured a two columns of helical flow structures, and the dividing line between the two structures seem to have geometric similarities to the eventual aortico-pulmonary septation, suggesting a possibility that flow is guiding septation.</em></p>
+      
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Ho S, Tan GXY, Foo TJ, Phan-Thien N, Yap CH. <strong>Organ Dynamics and Fluid Dynamics of the HH25 Chick Embryonic Cardiac Ventricle as Revealed by a Novel 4D High-Frequency Ultrasound Imaging Technique and Computational Flow Simulations.</strong> Ann Biomed Engr., 2017 Oct 1;45(10):2309-23. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/28744840/">Paper ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- AV Dynamics -->
+  <section id="av" class="anchor">
+    <div class="card">
+      <div class="section-title">Embryonic Atrio-Ventricular (AV) Fluid Dynamics</div>
+      <p class="card-desc">
+        Using a novel image registration technique, we extracted the wall motions of both the atria and ventricle of the embryonic heart, and performed computational simulations on it. One interesting finding we had was that the embryonic atrial appendages appeared to be playing the role of enhancing atrial function. They are the most contractile part of the atria, and accounts for 32% of atrial stroke volume and 42% of atrial work done, although they only occupy 20% of the atrial volume. Proper atrial function is likely important for providing the right pattern of wall shear stresses to stimulate the heart towards normal growth and remodelling.
+      </p>
+      
+      <img class="media" src="Image/research-4-1-10.gif" alt="Ventricle WSS" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Dynamic mesh CFD simulations of flow in the normal (control) 4.5 days old chick embryonic atria and ventricle.</em></p>
+      
+      <img class="media" src="Image/research-4-1-11.jpg" alt="Raw ultrasound 4.5d chick & Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Atrial appendages (circle) are among the most contractile structures in the embryonic heart, and appear to have the function of enhancing atrial pumping.</em></p>
+
+      <p class="card-desc">
+        We further performed similar studies on embryos after left atrial ligation at E3.5, which is an animal model of hypoplastic left heart syndrome (HLHS morphology observed by E6.5). Here, we discovered that the LV started to become smaller while the RV started to enlarge in compensation at E5.5, even before ventricular septation is complete. Closer investigation showed that LAL caused the shape changes to the heart, moving the atrioventricular junction medially, and causing the ventricular apex to become sharper. These caused changes to ventricular flow pattern, and created weak and oscillatory flow near to the LV free wall, which we believe is related to why the smaller LV developed.
+      </p>
+      <img class="media" src="Image/research-4-1-12.gif" alt="Ventricle WSS" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Dynamic mesh CFD simulations of flow in the 4.5 days old chick embryonic atria and ventricle, after Left-Atria-Ligation surgery to induce Hypoplastic Left Heart Syndrome.</em></p>
+      
+      <img class="media" src="Image/research-4-1-13.png" alt="Raw ultrasound 4.5d chick & Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>The pathlines of particles in the embryonic heart after 0, 2, and 5 cardiac cycles for HH25 hearts (both control and left atrial ligated). Green arrow demarcates region of high particle retention in the atrial appendage. Orange arrow demarcates region of high particle retention in ventricle apex and left ventricular free wall.</em></p>
+      
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Ho S, Chan WX, Nhan PT, Yap CH. <strong>Organ Dynamics and Hemodynamics of the Whole HH25 Avian Embryonic Heart, Revealed by Ultrsound Biomicroscopy, Bounday Tracking, and Flow Simulations.</strong> Scientific Reports, 2019 Dec 2;9(1):1-4.
+        </div>
+        <a class="btn btn-small" target="_blank" href="https://www.nature.com/articles/s41598-019-54061-w">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Future Work -->
+  <section id="future" class="anchor">
+    <div class="card">
+      <div class="section-title">Future Work</div>
+      <p class="card-desc">
+        We are currently investigating the mechanobiological expressions of the chick embryonic atrial ligation model of HLHS, and attempting to find the exact pathways by which such abnormal flow conditions can lead to the hypoplastic left heart in this animal model. We are also attempting to develop finite element model of the chick embryonic heart, so that we can model the growth and remodeling in the disease model.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div>© Yap Lab</div>
+      <div><a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a></div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

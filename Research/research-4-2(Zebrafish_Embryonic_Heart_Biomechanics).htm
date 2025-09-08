@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Zebrafish Embryonic Heart Biomechanics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards & Common */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25)}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+.backlink{font-size:14px}
+
+/* Images */
+.media{display:block;max-width:80%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:10px auto}
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.img-row {display: flex; width: 30%; margin: 0 auto;}
+.img-row img {flex: 1; height: auto; display: block; margin: 0; padding: 0; border: none; border-radius: 0;}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#intro">Overview</a>
+      <a href="#fluid-trab">Fluid Mechanics</a>
+      <a href="#tissue-trab">Tissue Mechanics</a>
+      <a href="#imaged-cfd">Imaged-Based CFD</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Zebrafish Embryonic Heart Biomechanics</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== Overview (原文保持) ===== -->
+  <section id="intro" class="anchor">
+    <div class="card">
+      <div class="section-title">Overview</div>
+      <p class="card-desc">The zebrafish embryo is a well-studied animal model of embryonic heart development. We performed a careful characterization of the zebrafish embryonic hear biomechanics to understand it better. A similar approach to our other fetal and embryonic studies was adopted. We employed various high-resolution microscopy to scan the embryonic heart in 4D, apply our validated cardiac motion estimation algorithm to extract cardiac movements, and then perform both computational fluid dynamics to understand cardiac fluid mechanics, and finite element modelling to understand myocardial mechanics, to understand the embryonic heart function and support mechanobiology investigations.</p>
+    </div>
+  </section>
+
+  <!-- ===== Fluid Mechanics of the Embryonic Heart Trabeculation ===== -->
+  <section id="fluid-trab" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Fluid Mechanics of the Embryonic Heart Trabeculation</div>
+      <p class="card-desc">We employed a high-resolution spinning disc confocal microscopy of zebrafish line with endothelial membrane fluorescence for our CFD flow simulations. This allows the accurate location the blood-endocardium boundary for the simulations, which we found was important, using myocardial fluorescence appears to underestimate walls shear stresses.</p>
+
+      <div class="img-row">
+        <img src="Image/research-4-2-1.gif" alt="Processed 1" onerror="this.src='Image/Research/placeholder.jpg'">
+        <img src="Image/research-4-2-1'.gif" alt="Processed 2" onerror="this.src='Image/Research/placeholder.jpg'">
+        <img src="Image/research-4-2-1''.jpg" alt="Processed 3" onerror="this.src='Image/Research/placeholder.jpg'">
+      </div>
+
+      <p class="card-desc">Our simulations showed that trabeculations enhanced wall shear stresses at the ridges and reduced wall shear stresses at the grooves. We studied individual inter-trabeculation fluid spaces, and found that the contraction motion squeezing on these spaces is the main driver of wall shear stresses on endothelium within these spaces, rather than flow induced by fluid in the main chamber, or translation of the chamber. Further we observed endothelial-hematopoetic cells within the inter-trabecular spaces that enhanced wall shear stresses.</p>
+
+      <img class="media" src="Image/research-4-2-2.jpg" alt="Inter-trabecular scenarios comparison" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em><strong>What is the main driver of fluid forces in the inter-trabecular space?</strong> Simulations of individual trabeculation spaces under various scenarios, Baseline - simulated together with the rest of the ventricle; No Ventricle - detached from ventricle during simulation; No Deformation - detached from ventricle with no deformational motion; No Translation - detached from ventricle with no translation motion. Results show that removing the ventricle or translation motion did not affect wall shear stresses much, but removing deformational motion drastically reduced it.</em></p>
+
+      <p class="card-desc">Interestingly, we observed that there was not much difference in the wall shear stress magnitude or oscillatory index at regions of the embryonic heart that trabeculated (outer curvature region), versus regions that did not trabeculate (Inner curvature region). This suggested that fluid forces stimuli alone may not be enough to induce trabeculation formation.</p>
+
+      <img class="media" src="Image/research-4-2-3.jpg" alt="Inter-trabecular scenarios comparison" onerror="this.src='Image/Research/placeholder.jpg'">
+      <div class="hr"></div>
+      <div class="card-desc" style="margin:0">
+             Cairelli AG, Chow RW, Vermot J, Yap CH. <strong>Fluid Mechanics of the Zebrafish Embryonic Heart Trabeculation.</strong> PloS Comput Biol, 2022 Jun 6;18(6):e1010142
+        <a class="btn btn-small" target="_blank" href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1010142">Paper ↗</a>
+      </div>
+  </section>
+
+  <!-- ===== Tissue Mechanics of the Embryonic Heart Trabeculation ===== -->
+  <section id="tissue-trab" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Tissue Mechanics of the Embryonic Heart Trabeculation</div>
+      <p class="card-desc">To understand the function and mechanobiological origins of embryonic heart trabeculations, we performed image-based finite element modelling. We find that trabeculations enhances deformability of the myocardium, allowing the heart to undergo higher strains where there are trabeculations, and trabeculations themselves undergo higher strains than surrounding myocardium. Further, artificially smoothed hearts (removing trabeculation) with the same myocardial mass could sustain the same cardiac function with reduced myocardial tensile stresses. These suggest that trabeculations have the function of enhancing deformability and reducing stresses.</p>
+
+      <!-- 占位图：流程图 -->
+      <img class="media" src="Image/research-4-2-4.jpg" alt="Workflow of image-based FE modelling" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Our workflow of image-based finite element modelling of zebrafish embryonic heart</em></p>
+
+      <!-- 占位图：应变分布 -->
+      <img class="media" src="Image/research-4-2-5.jpg" alt="Strain quantification" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Image-tracking quantification of myocardial strains showed that regions with trabeculation has higher strain, while the trabeculations themselves showed higher strains than surrounding myocardium. This suggests that trabeculations play a role to enhance tissue deformability.</em></p>
+
+      <!-- 占位图：FE 对比 -->
+      <img class="media" src="Image/research-4-2-6.jpg" alt="FE smooth vs trabeculated" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Finite Element Simulations showed that if trabeculations are removed (smooth model), stresses are higher, suggesting that trabeculations play a role of reducing myocardial stresses.</em></p>
+    </div>
+  </section>
+
+  <!-- ===== Imaged-Based CFD Simulation of Zebrafish Embryonic Heart ===== -->
+  <section id="imaged-cfd" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Imaged-Based CFD Simulation of Zebrafish Embryonic Heart</div>
+      <p class="card-desc">In our previous simulations, we characterized the general wall shear stresses characteristics of the normal zebrafish embryonic heart, which were found to be elevated at the atrioventricular inlet and near the outlet. Wall shear stresses were biphasic, corresponding to inflow and outflow, and consequent to the highly viscous, low Reynolds Number environment, wall shear stresses were elevated near the inner curvature of the embryonic heart, and lower at the outer curvature. The heart was found to have a wave-like contraction motion, where the inlet would contract earlier than the outlet. This was found to favour ejection, as it saves energy required for ejection.</p>
+
+      <img class="media" src="Image/research-4-2-7.png" alt="WSS contour and vectors over cycle" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>(A) Contour maps of wall shear stress and velocity vectors along the longitudinal cross-section in three normal ventricles over the cardiac cycle. (B) WSS averaged across the cross-section, plotted against time for the three hearts. Solid line and dash line represent the measurements at the near-inlet region and near-outlet region respectively. The first hump in the waveform correspond to diastole. (C) WSS averaged across the cross-section, plotted against time, at three different regions for heart II over the course of the cardiac cycle. (D) WSS of heart II at peak diastole and peak systole respectively in 3D view, demonstrating that the inner curvature of the ventricle experienced higher WSS.</em></p>
+      <div class="hr"></div>
+      <div class="card-desc" style="margin:0">
+              Foo YY, Pant S, Tay S, Imangali N, Chen NG, Winkler C, Yap CH. <strong>4D modelling of fluid mechanics 1 in the zebrafish embryonic heart.</strong> PloS Comput Biol, 2022 Jun 6;18(6):e1010142.
+        <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/31446522/">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© Yap Lab</div>
+      <div class="row" style="gap:12px">
+        <a href="/YapLab.htm" style="color:var(--muted)">Back to Main Page</a>
+        <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Human Fetal Heart Echocardiography Image Processing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%} 
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards & Common */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25)}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.tag{font-size:11px;border:1px solid var(--border);padding:4px 8px;border-radius:999px;color:#cbd5e1;background:linear-gradient(180deg,#0f1522,#0d1420)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+.backlink{font-size:14px}
+
+/* Images */
+.hero-img{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+
+/* Simple grid for side-by-side images when needed */
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#motivation">Motivation</a>
+      <a href="#motion">Motion Estimation</a>
+      <a href="#compounding">Compounding</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Human Fetal Heart Echocardiography Image Processing</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== Motivation ===== -->
+  <section id="motivation" class="anchor">
+    <div class="card">
+      <div class="section-title">Motivation</div>
+      <p class="card-desc">
+        Ultrasound imaging is the de facto modality for fetal heart imaging. It has better resolution and is more readily available than MRI, and unlike the CT, it does not use ionizing radiation that can threaten the fetus. However, ultrasound can be noisy, and is prone to signal losses, and is especially challenging when applied to structures as small as the human fetal heart. We develop tools to improve the imaging of the fetal heart, and to extract useful information on its physiology, function, and biomechanics.
+      </p>
+      <!-- Media3 -->
+      <img class="hero-img" src="Image/research-3-1-1.gif" alt="4D fetal heart STIC" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Sample of 4D ultrasound images of a human fetal heart (STIC mode) that is used for computational simulations.</em></p>
+    </div>
+  </section>
+
+  <!-- ===== Cardiac Motion Estimation ===== -->
+  <section id="motion" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Cardiac Motion Estimation</div>
+      <p class="card-desc">
+        We developed a method to track the motion of the heart over the cardiac cycle from fetal echo. 3D free-form deformation pair-wise image registration is first performed, and a global motion field consisting of spatial B-splines of temporal Fouriers is then iteratively fitted onto registration velocity field outputs, to enforce cyclic motions, and temporal and spatial consistency. The technique is validated using echo data from the cardiac motion analysis challenge, which comes with MRI truths. Cardiac estimation algorithms often underestimate the stroke volume. With our approach, additional inputs of segmentations at when the heart is at its the largest and smallest can be used to regularize the algorithm to produce motions with accurate stroke volumes.
+      </p>
+      <!-- Media1 & Media2 -->
+      <div class="grid-2">
+        <div>
+          <img class="hero-img" src="Image/research-3-1-2.gif" alt="Zebrafish 4D motion tracking" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Image registration tracking luminal space of a 5 days post fertilization of a zebrafish embryo from 4D microscopy images.</em></p>
+        </div>
+        <div>
+          <img class="hero-img" src="Image/research-3-1-3.gif" alt="Human fetal RV 4D tracking" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>Image registration tracking of the luminal space of a human fetal right ventricle from 4D clinical ultrasound images.</em></p>
+        </div>
+      </div>
+      <div class="hr"></div>
+      <!-- Reference -->
+      <div class="row" style="justify-content:space-between">
+        <div class="card-desc" style="margin:0">
+          Wiputra H, Chan WX, Foo YY, Ho S, Yap CH. <strong>Cardiac Motion Estimation from Medical Images: Regularisation Framework Applied on Pairwise Image Registration Displacement Fields.</strong> Scientific Reports, 2020 Oct 28;10(1):1–4.
+        </div>
+        <a class="btn btn-small" href="https://www.nature.com/articles/s41598-020-75525-4" target="_blank" rel="noreferrer">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Image Compounding ===== -->
+  <section id="compounding" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Image Compounding to Improve Fetal Echocardiography Quality</div>
+      <p class="card-desc">
+        Using our validated cardiac motion estimation algorithm, we developed an algorithm for 2D and 3D image compounding of all frames within the cardiac cycle. Images from all time frames were deformed to match that of the reference time, and all these images were fused. Thereafter, the fused image can be re-animated over the cardiac cycle with our cardiac motion model. Compounding could improve contrast-to-noise ratios, and reveal previously unclear cardiac structures. Further, if the heart momentarily exceeds the field of view, compounding enables its recovery, enabling the image to exceed its field of view.
+      </p>
+
+      <div class="grid-2">
+        <div>
+          <img class="hero-img" src="Image/research-3-1-4.gif" alt="Adult echo" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>(left) human adult echo, and (right) the same image after 3D whole cycle image compounding to reduce noise and enhance signals.</em></p>
+        </div>
+        <div>
+          <img class="hero-img" src="Image/research-3-1-5.png" alt="Porcine raw" onerror="this.src='Image/Research/placeholder.jpg'">
+          <p class="card-desc"><em>(left) Raw porcine echocardiography image where part of the heart exceeded the field of view. (right) Image compounding can restore part of the myocardium that exceeded the field of view, and it could clarify the boundaries of the myocardium.</em></p>
+        </div>
+      </div>
+
+      <p class="card-desc">
+        Fetal heart echo scans have low resolution in the lateral and elevational directions, but high resolution in the axial direction. We thus propose to scan the heart at various orientations, and perform Multiview compounding (compounding of scans at various views) to improve resolution and signals-to-noise.
+      </p>
+      <img class="hero-img" src="Image/research-3-1-6.jpg" alt="Multiview compounding" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Multiview compounding to enable isotropic resolution, and improve image quality.</em></p>
+      
+      <div class="hr"></div>
+      <!-- Reference -->
+      <div class="row" style="justify-content:space-between">
+        <div class="card-desc" style="margin:0">
+          Chan WX, Zheng Y, Wiputra H, Leo HL, Yap CH. <strong>Full Cardiac Cycle Asynchronous Temporal Compounding of 3D Echocardiography Images.</strong> Medical Image Analysis, 2021 Dec;74:102229.
+        </div>
+        <a class="btn btn-small" href="https://www.sciencedirect.com/science/article/pii/S1361841521002747" target="_blank" rel="noreferrer">Paper ↗</a>
+        <div class="hr"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Future Work ===== -->
+  <section id="future" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Future Work</div>
+      <p class="card-desc">
+        We seek to continue innovating in image processing techniques, so as to gain better tools to evaluate fetal heart function, and to detect dysfunction and congenital malformations.
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="row" style="justify-content:space-between">
+      <div>© Yap Lab</div>
+      <div class="row" style="gap:12px">
+        <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

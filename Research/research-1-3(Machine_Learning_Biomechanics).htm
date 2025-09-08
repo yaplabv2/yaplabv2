@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research Details – Deep Learning Biomechanics Simulations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+  <style>
+    :root { --bg:#0d1117; --card:#101522; --fg:#f7f8fa; --muted:#a9b4c0; --border:#1b2846; --primary:#5aa7ff; --accent:#a78bfa }
+    * { box-sizing:border-box }
+    html,body { height:100% }
+    body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+           background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%); color:var(--fg); padding-top:64px }
+    a { color:var(--primary); text-decoration:none }
+    a:hover { text-decoration:underline }
+    .container { max-width:1120px; margin:0 auto; padding:0 20px }
+    .nav { position:fixed; top:0; left:0; right:0; z-index:1000; border-bottom:1px solid var(--border);
+           backdrop-filter:saturate(130%) blur(10px); background:rgba(13,17,23,.6) }
+    .nav-inner { display:flex; align-items:center; justify-content:space-between; height:64px }
+    .brand { font-weight:700; letter-spacing:-.02em }
+    .menu { display:flex; gap:20px; font-size:14px }
+    .hero { padding:28px 0 }
+    .h1 { font-size:34px; line-height:1.15; margin:8px 0 }
+    .subtitle { color:var(--muted); font-size:16px; margin-top:6px }
+    .card { border:1px solid var(--border); background:linear-gradient(180deg,#101522,#0e1420);
+            border-radius:16px; padding:16px; box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25) }
+    .section-title { font-weight:800; font-size:22px; text-align:center; margin:4px 0 10px }
+    .card-desc { color:var(--muted); font-size:14px; margin:8px 0 12px; text-align: justify;}
+    .card-desc em {display: block; text-align: center; font-style: italic;}
+    .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap }
+    .tag { font-size:11px; border:1px solid var(--border); padding:4px 8px; border-radius:999px;
+           color:#cbd5e1; background:linear-gradient(180deg,#0f1522,#0d1420) }
+    .btn { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border);
+           background:linear-gradient(180deg,#111827,#0f1623); padding:8px 12px; border-radius:999px;
+           font-size:14px; box-shadow:0 6px 16px rgba(0,0,0,.25) }
+    .btn-small { padding:6px 10px; font-size:13px }
+    .anchor { scroll-margin-top:76px }
+    .hr { height:1px; background:var(--border); margin:16px 0; border-radius:999px }
+    .backlink { font-size:14px }
+    .hero-img { border-radius:10px; border:1px solid var(--border); background:#0b1220 }
+    footer { border-top:1px solid var(--border); margin-top:28px; padding:22px 0; color:var(--muted) }
+    body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#cnn-reg">Overview</a>
+      <a href="#vfs">PINN for VFS</a>
+      <a href="#MRI">PINN for MRI</a>
+      <a href="#DL Generation">DL Generation</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Deep Learning Biomechanics Simulations</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== 1. Overall ===== -->
+  <section id="cnn-reg" class="anchor">
+    <div class="card">
+      <div class="section-title">Overview</div>
+      <p class="card-desc">We employ deep learning networks that are constrained by physics governing equations to extract motion, myocardial strains, and to perform computational flow simulations as well as finite element myocardial tissue mechanics simulations. Combined with our deep learning image processing work, we aim to have pipelines that start directly from the images for seamless processing.</p>
+    </div>
+  </section>
+
+  <!-- ===== 2. Multi-Case PINN for Vascular Flow Simulations ===== -->
+  <section id="vfs" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Multi-Case PINN for Vascular Flow Simulations</div>
+      <p class="card-desc">We developed a neural network pre-trained over a wide range of possible vascular geometries, by parameterizing the geometries as network inputs. This will enable flow simulation results to be very quickly generated when a new case that is unseen by the network is presented. We compared PINN to a network directly supervised by flow simulation results (SN), but find that SN outperforms PINN in this problem setup, both in terms of accuracy and computational cost. We further discovered that some auxiliary strategies can enhance performance, such as geometric encoding (a pre-trained network that calculates curvilinear coordinate parameters), and hard constrained no-slip boundary condition.</p>
+      <p class="card-desc">[We are in the process of publishing this work to provide further details]</p>
+      <img class="hero-img" src="Image/research-1-3-1(Multi-Case_PINN).png" alt="Multi-Case_PINN 1" style="max-width:50%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Problem definition: to predict velocities and pressures in a curved stenotic vessel, whose curvatures and stenosis severity are within a range of possible values. Flow can be steady or pulsatile.</em></p>
+      <img class="hero-img" src="Image/research-1-3-2(Multi-Case_PINN).png" alt="Multi-Case_PINN 2" style="max-width:100%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Our network architecture</em></p>
+      <img class="hero-img" src="Image/research-1-3-3(Multi-Case_PINN).png" alt="Multi-Case_PINN 3" style="max-width:75%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Errors of network prediction of velocities and pressure in 279 unseen testing geometries within the trained geometric parameter range, expressed as the average or maximum of all testing geometries (where the spatial maximum error is taken as the error of each geometry).</em></p>
+    </div>
+  </section>
+
+  <!-- ===== 3. PINN Image Registration of MRI Images ===== -->
+  <section id="MRI" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">PINN Image Registration of MRI Images</div>
+      <p class="card-desc">We developed a new Physics Informed Neural Network (PINN) framework tailored for left ventricular (LV) finite element (FE) modelling. Compared to existing PINN-FE approaches, our approach introduces 2 key innovations: (1) Consistency with imaged motions: our PINN enforces an alignment between simulated cardiac motions and image-derived motion, so that predictions will have a high level of fidelity to imaged cardiac behaviour. (2) Estimations of myocardial stiffness and active tension: our PINN framework performs a back-computation of these parameters, to reach patient-specificity. Our PINN-FE utilizes imaged shape modes to speed up computations, and requires only 3 minutes for training each case. This gives it a speed advantage over traditional FE and the alternative PINN approaches.</p>
+      <p class="card-desc">[We are in the process of publishing this work to provide further details]</p>
+      <img class="hero-img" src="Image/research-1-3-4(Multi-Case_PINN).png" alt="Multi-Case_PINN 4" style="max-width:70%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Workflow of our FINN-FE framework</em></p>
+    </div>
+  </section>
+
+  <!-- ===== 4. Deep Learning Generation of Realistic Cranial Aneurysm Geometries ===== -->
+  <section id="DL Generation" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Deep Learning Generation of Realistic Cranial Aneurysm Geometries</div>
+      <p class="card-desc">Fluid mechanical stresses are believed to play an important role in determining the rupture and disease progression risks of cranial aneurysm. Performing image-based simulations to obtain such fluid dynamics details is time consuming. We aspire to train a network for real time prediction of fluid dynamics parameters for clinical uses. To do this, we first need to resolve the lack of a large dataset of cranial aneurysms and its computational fluid dynamics (CFD) simulations. We developed a generative AI network to generate realistic synthetic cranial aneurysm 3D meshes, which is composed of both the parent vessels and the aneurysm pouch, which is ready for CFD simulations. We utilize Graph Fourier Deformation to model shapes, and utilized variable autoencoders for the generation.</p>
+      <p class="card-desc">A particular useful feature of our shape generator is that it can be controlled to generate specific clinically relevant shape parameters, such as specific aneurysm pouch aspect ratio, neck size, and extent of lobulation. This is useful for downstream fluid dynamics investigations to understand effects of geometric features on fluid patterns and stresses.</p>
+      <p class="card-desc">[We are in the process of publishing this work to provide further details]</p>
+      <img class="hero-img" src="Image/research-1-3-5(Multi-Case_PINN).png" alt="Multi-Case_PINN 5" style="max-width:90%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+      <img class="hero-img" src="Image/research-1-3-6(Multi-Case_PINN).png" alt="Multi-Case_PINN 6" style="max-width:90%;height:auto;display:block;margin:0 auto" onerror="this.src='Image/Research/placeholder.jpg'">
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="row" style="justify-content:space-between">
+      <div>© Yap Lab</div>
+      <div><a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a></div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

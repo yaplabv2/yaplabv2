@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Placenta Biomechanics</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);margin-top:18px}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+
+/* Media */
+.media{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#overview">Overview</a>
+      <a href="#iugr">IUGR</a>
+      <a href="#mech-prop">Mechanical Properties</a>
+      <a href="#elasto">Elastography</a>
+      <a href="#umbilical">Umbilical Flow</a>
+      <a href="#chorionic">Chorionic Arteries</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Placenta Biomechanics</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== Overview ===== -->
+  <section id="overview" class="anchor">
+    <div class="card">
+      <div class="section-title">Overview</div>
+      <p class="card-desc">Placenta is a powerful organ that support the fetus growth during pregnancy. Abnormal development of umbilical and placenta will have detrimental effect on fetus, be it in utero or later in life, and it can also have a serious implication for maternal health. We advocate a biomechanics approach to understanding placenta health and diseases. We believe that such an approach can lead to new insights, leading to better detection, diagnosis, and even treatment.</p>
+    </div>
+  </section>
+
+  <!-- ===== IUGR ===== -->
+  <section id="iugr" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Intrauterine Growth Restriction (IUGR)</div>
+      <p class="card-desc">We are particularly interested in IUGR, which is a disease of the placenta where not enough nutrients and oxygen can be transferred from the mother to the fetus, leading to 5-10x higher mortality rate, and life-long morbidities such as neuro-maldevelopment, hypertension, diabetes and cardiovascular diseases. Even in developed world, its prevalence is high, at 3%. Currently, there are no proven method to prevent or treat IUGR, and detection rate remains poor, as it is difficult to differentiate between healthy but small babies and diseased babies. However, successful detection can allow management strategies such as timing of delivery, which can improve outcome.</p>
+    </div>
+  </section>
+
+  <!-- ===== Mechanical Properties ===== -->
+  <section id="mech-prop" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Mechanical Properties of Normal and IUGR Placenta Tissue</div>
+      <p class="card-desc">We performed mechanical testing of post-delivery human placenta samples, to characterize mechanical properties, and to understand changes during IUGR. Placenta tissues were found to have substantial viscoelasticity and are thus sensitive to loading rates during mechanical testing. They are surprisingly isotropic in stiffness, as shown after testing the same samples in different directions. IUGR placenta tissues are stiffer than normal ones, but the differences are only significant at a low compression rate. At the same time, IUGR placenta tissues have a higher collagen to elastin ratio than normal ones.</p>
+      <img class="media" src="Image/research-7-1-1.png" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Saw SN, Low JYR, Ong MHH, Poh YW, Mattar CNZ, Biswas A, Yap CH. <strong>Hyperelastic Mechanical Properties of Ex Vivo Normal and Intrauterine Growth Restricted Placenta.</strong> Ann Biomed Engr, 2018 Jul 1;46(7):1066-77. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29626273/">Paper ↗</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ===== Elastography ===== -->
+  <section id="elasto" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Placenta Ultrasound Elastography to Detect IUGR</div>
+      <p class="card-desc">We investigate whether alternative detection techniques, such as ultrasound elastography can be successful in detecting IUGR. Informed by our mechanical testing work, we propose that ultrasound strain elastography should be (1) performed with a motorized control of the ultrasound transducer (because viscoelasticity implies that different loading rate can alter tissue stiffness), (2) measured at a low compression depth and lower compression rate (our results shows higher correlation between elastography results and mechanical testing validation), and (3) an external polymeric pad should be used as the reference layer, instead of bodily tissues, as this ensures that the reference layers stiffness can be well controlled.</p>
+      <img class="media" src="Image/research-7-1-2.png" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Saw SN, Low JYR, Mattar CNZ, Biswas A, Chen L, Yap CH. <strong>Motorizing and Optimizing Ultrasound Strain Elastography for Detecting Intrauterine Growth Restriction Pregnancies.</strong> Ultrasound Med. Biol, 2018 Mar 1;44(3):532-43. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29626273/">Paper ↗</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ===== Umbilical Vascular Fluid Dynamics ===== -->
+  <section id="umbilical" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Umbilical Vascular Fluid Dynamics</div>
+      <p class="card-desc">Using clinical ultrasound imaging, we extracted anatomy and flow velocities of umbilical arteries and veins, and performed computational fluid dynamics to understand relationship between flow forces and vascular sizes. Some discoveries we made were:</p>
+      <p class="card-desc">(1)   Flow wall shear stresses in umbilical arteries were independent of size, suggesting homeostatic mechanisms to maintain certain levels of wall shear stresses. This was not true for veins.</p>
+      <p class="card-desc">(2)   Flow profiles departed significantly from a parabolic profile in the arteries, due to their spiral geometry</p>
+      <p class="card-desc">(3)   Umbilical arterial flow resistance and wall shear stress environment does not change substantially during umbilical cord bending, but this is not true for veins</p>
+      <p class="card-desc">(4)   During IUGR, the wall shear stress environment of arteries and vein did not deviate from normal pregnancies, suggesting wall shear sensing behaviour may not have changed.</p>
+      <img class="media" src="Image/research-7-1-3.png" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Saw SN, Chia DAK, Biswas A, Mattar CNZ, Yap CH. <strong>Characterization of the In Vivo Shear Stress Environment of Human Fetus Umbilical Arteries and Veins.</strong> Biomech Model Mechanobiol, 2017 Feb;16(1):197-211. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/27456489/">Paper ↗</a>
+        </div>
+        <div class="card-desc" style="margin:0">
+          Saw SN, Poh YW, Chia DAK, Biswas A, Mattar CNZ, Yap CH. <strong>Characterization of the Hemodynamic Wall Shear Stresses in Human Umbilical Vessels from Normal and Intrauterine Growth Restricted Pregnancies.</strong> Biomech Model Mechanobiol, 2018 Aug;17(4):1107-1117 <br>
+          <a class="btn btn-small" target="_blank" href="https://pubmed.ncbi.nlm.nih.gov/29691766/">Paper ↗</a>
+        </div>
+      </div>
+  </section>
+
+  <!-- ===== Chorionic Arterial Anatomy... ===== -->
+  <section id="chorionic" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Chorionic Arterial Anatomy, Mechanical Properties and Pulsatility</div>
+      <p class="card-desc">We performed vascular casting to investigate placenta arterial anatomy, performed lumped parameter computational modelling to understand pulsatility in these vessels, and mechanical testing to understand stiffness properties. Comparisons were made between normal and IUGR human samples.</p>
+      <p class="card-desc">Results showed that IUGR chorionic arteries were more distensible, and this could explain the high umbilical pulsatility indices (resistance index, RI, and pulsatility index, PI). IUGR arteries were smaller than normal ones, but there were few other differences in terms of vascular and branching geometry, and opening angle of vessels.</p>
+    <img class="media" src="Image/research-7-1-4.png" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+    <img class="media" src="Image/research-7-1-5.jpg" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+    <div class="row">
+      <div class="card-desc" style="margin:0">
+        Saw SN, Tay JJH, Poh YW, Yang L, Tan WC, Tan LK, Clark A, Biswas A, Mattar CNZ, Yap CH. <strong>Altered Placental Chorionic Arterial Biomechanical Properties During Intrauterine Growth Restriction.</strong> Scientific Reports, 2018 Nov 8;8(1):16526. <br>
+        <a class="btn btn-small" target="_blank" href="https://www.nature.com/articles/s41598-018-34834-5">Paper ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Future Work ===== -->
+  <section id="future" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Future Work</div>
+      <p class="card-desc">Currently, we are pursuing the use of the rat model of IUGR to understand fetal heart and vascular growth and remodelling during IUGR, and how the cardiovascular function, mechanical properties, and structure changes over gestation.</p>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© Yap Lab</div>
+      <div class="row" style="gap:12px">
+        <a href="/YapLab.htm" style="color:var(--muted)">Back to Main Page</a>
+        <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

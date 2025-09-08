@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Towards a Blood Pump with Low Blood Damage</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+:root{--bg:#0d1117;--card:#101522;--fg:#f7f8fa;--muted:#a9b4c0;--border:#1b2846;--primary:#5aa7ff;--accent:#a78bfa}
+*{box-sizing:border-box} html,body{height:100%}
+body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%);color:var(--fg);padding-top:64px}
+a{color:var(--primary);text-decoration:none} a:hover{text-decoration:underline}
+.container{max-width:1120px;margin:0 auto;padding:0 20px}
+
+/* Nav */
+.nav{position:fixed;top:0;left:0;right:0;z-index:1000;border-bottom:1px solid var(--border);backdrop-filter:saturate(130%) blur(10px);background:rgba(13,17,23,.6)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{font-weight:700;letter-spacing:-.02em}
+.menu{display:flex;gap:20px;font-size:14px}
+
+/* Header */
+.hero{padding:28px 0}
+.h1{font-size:34px;line-height:1.15;margin:8px 0}
+.subtitle{color:var(--muted);font-size:16px;margin-top:6px}
+
+/* Cards */
+.card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:16px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);margin-top:18px}
+.section-title{font-weight:800;font-size:22px;text-align:center;margin:4px 0 10px}
+.card-desc{color:var(--muted);font-size:14px;margin:8px 0 12px;text-align:justify}
+.card-desc em{display:block;text-align:center;font-style:italic}
+.row{display:flex;gap:10px;align-items:center;flex-wrap:wrap;justify-content:space-between}
+.anchor{scroll-margin-top:76px}
+.hr{height:1px;background:var(--border);margin:16px 0;border-radius:999px}
+
+/* Media */
+.media{display:block;max-width:100%;height:auto;border-radius:10px;border:1px solid var(--border);background:#0b1220;margin:0 auto}
+.grid-2{display:grid;grid-template-columns:repeat(1,minmax(0,1fr));gap:12px}
+@media(min-width:900px){.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* Footer */
+footer{border-top:1px solid var(--border);margin-top:28px;padding:22px 0;color:var(--muted)}
+.btn{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--border);background:linear-gradient(180deg,#111827,#0f1623);padding:8px 12px;border-radius:999px;font-size:14px;box-shadow:0 6px 16px rgba(0,0,0,.25)}
+.btn-small{padding:6px 10px;font-size:13px}
+body {
+      background: 
+        linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+        url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+      background-size: 1000px 800px;
+    }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="#overview">Overview</a>
+      <a href="#shp">Superhydrophobic Blood Pumps</a>
+      <a href="#de-pump">Dielectric Elastomer Pump</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Research Details</h1>
+    <div class="subtitle">Towards a Blood Pump with Low Blood Damage</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ===== Overview (text preserved verbatim) ===== -->
+  <section id="overview" class="anchor">
+    <div class="card">
+      <div class="section-title">Overview</div>
+      <p class="card-desc">Blood pumps save countless lives every day, and include the implanted type (LVAD), those in the ICU (ECMO), and those in the surgical suite (heart-lung machine). However, they impose high stresses on blood and induce foreign surface reactions to cause thrombosis, and thromboembolic complications.</p>
+      <p class="card-desc">We pursue various strategies and technologies to attain a blood pump with low blood damage. For example, we fabricate superhydrophobic and superhemophobic surfaces to enable slip flow in blood pump surfaces to reduce stresses, we seek new ways of pumping blood, such as using electro-active polymers and utilizing resonance in roller pumping.</p>
+    </div>
+  </section>
+
+  <!-- ===== Superhydrophobic Blood Pumps ===== -->
+  <section id="shp" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Superhydrophobic Blood Pumps</div>
+      <p class="card-desc">We pursue the strategy of using superhydrophobic surfaces to enable slip flow to reduce fluid stresses in cardiovascular medical devices such as blood pumps. We have a holistic approach of fabricating novel biocompatible superhydrophobic materials, testing them for drag reduction, protein adsorption and hemocompatibility properties, using them in blood pumps, and performing computational simulations to understand the effects of using these material in the pumps.</p>
+      <p class="card-desc">We were successful in fabricating a superhydrophobic material that is flexible, shape-customizable, and which has admirable durability and excellent drag reduction capabilities.</p>
+
+      <img class="media" src="Image/research-5-1-1.png" alt="Blood rolling off the SHP surface" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Blood rolling off the SHP surface without stains</em></p>
+
+      <img class="media" src="Image/research-5-1-2.jpg" alt="SHP durability" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Superior durability of the SHP material compared to alternatives</em></p>
+
+      <img class="media" src="Image/research-5-1-3.jpg" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc"><em>Good drag reduction capabilities of the SHP material</em></p>
+
+      <p class="card-desc">The effects of inserting superhydrophobic surfaces into a extracorporeal blood pump was investigated via computational simulations. We found that blood damage and fluid shear stresses could be reduced, the pumping pressure and pump efficiency could be increased.</p>
+
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-5-1-4.jpg" style="width:auto;height:80%;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-5-1-5.gif" style="max-width:100%;height:auto;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+      <p class="card-desc"><em>Simulations of a commercial blood pump head with superhydrophobic coatings</em></p>
+
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Li Z, Nguyen BL, Cheng YC, Xue JM, MacLaren G, Yap CH. <strong>Durable, Flexible, Superhydrophobic and Blood-Repelling Surface for Use in Medical Blood Pumps.</strong> J. Mater. Chem. B., 2018;6(39):6225-33. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubs.rsc.org/en/content/articlelanding/2018/tb/c8tb01547c">Paper ↗</a>
+        </div>
+        
+        <div class="card-desc" style="margin:0">
+            Lai CQ, Chia JWS, Chua WWC, Yap CH. <strong>Near-Superhydrophobic Surface Reduces Hemolysis of Blood Flow in Tubes.</strong> RSC Advances, 2016; 6(67):62451-9.
+            <a class="btn btn-small" target="_blank" href="https://pubs.rsc.org/en/content/articlelanding/2016/ra/c6ra12376g">Paper ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Dielectric Elastomer Fluid Pump ===== -->
+  <section id="de-pump" class="anchor" style="margin-top:18px">
+    <div class="card">
+      <div class="section-title">Dielectric Elastomer Fluid Pump</div>
+      <p class="card-desc">We investigated a special electro-active polymer, Dielectric Elastomer (DE), for use in fluid pumping. DE has the alias of "artificial muscle" as it has similar energy density and actuation strain capabilities as natural muscles. DE is also interesting because it exhibits electro-mechanical instability (commonly known as the snap-through phenomenon), exhibiting a reversible large stretch due to natural instabilities, which can be tapped into to drastically enhance pumping volume.
+      DE</p>
+
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-5-1-6.jpg" style="width:auto;height:100%;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-5-1-7.gif" style="max-width:80%;height:auto;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+
+      <p class="card-desc">We demonstrated the use of reversible snap-through for fluid pumping in vitro, and discovered the conditions necessary for this to happen. We also laid down the theoretical framework for DE snap-through fluid pumping, and demonstrated experimental pressure-volume curves that fits this theory.</p>
+
+      <img class="media" src="Image/research-5-1-8.jpg" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      <p class="card-desc">Further, we proposed methods to counter the durability limitations and excessive viscoelastic properties of DE, such as adding highly elastic material to it to form a composite, and we proposed design methods that enable DE fluid pumps to snap-through under a wider range of pressures, and under high adverse pressure gradients.</p>
+
+      <div class="grid-2">
+        <div>
+          <img class="media" src="Image/research-5-1-9.jpg" style="width:auto;height:100%;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+        <div>
+          <img class="media" src="Image/research-5-1-10.jpg" style="max-width:80%;height:auto;border-radius:10px;display:block;margin:0 auto" alt="Processed ultrasound blood/tissue" onerror="this.src='Image/Research/placeholder.jpg'">
+        </div>
+      </div>
+      <p class="card-desc"><em>Dual-membrane design that enables high volume per cycle pumping even under unfavourable pressure conditions.</em></p>
+      <img class="media" src="Image/research-5-1-11.jpg" alt="Drag reduction" onerror="this.src='Image/Research/placeholder.jpg'">
+      
+      <div class="hr"></div>
+      <div class="row">
+        <div class="card-desc" style="margin:0">
+          Li Z, Zhu J, Foo KCC, Yap CH. <strong>A Novel and Robust Dual-Membrane Dielectric Elastomer Actuator for Large Volume Fluid Pumping via Snap-through.</strong> Appl. Phys. Lett., 2017 Nov 20;111(21):212901. <br>
+          <a class="btn btn-small" target="_blank" href="https://pubs.aip.org/aip/apl/article-abstract/111/21/212901/985973/A-robust-dual-membrane-dielectric-elastomer?redirectedFrom=fulltext">Paper ↗</a>
+        </div>
+        <div class="card-desc" style="margin:0">
+          Li Z, Wang Y, Foo KCC, Godaba H, Zhu J, Yap CH. <strong>The Mechanism for Large-Volume Fluid Pumping via Reversible Snap-Through of Dielectric Elastomer.</strong> J Appl Phys., 2017 Aug 28;122(8):084503 <br>
+          <a class="btn btn-small" target="_blank" href="https://pubs.aip.org/aip/jap/article-abstract/122/8/084503/394994/The-mechanism-for-large-volume-fluid-pumping-via?redirectedFrom=fulltext">Paper ↗</a>
+        </div>
+        <div class="card-desc" style="margin:0">
+          Wang YX, Li Z, Qin L, Caddy G, Yap CH and Zhu J. <strong>Dielectric Elastomer Fluid Pump of High Pressure and Large Volume Via Synergistic Snap-Through.</strong> J. Appl. Mech., 2018 Oct 1; 85(10):101003 <br>
+          <a class="btn btn-small" target="_blank" href="https://asmedigitalcollection.asme.org/appliedmechanics/article-abstract/85/10/101003/735716/Dielectric-Elastomer-Fluid-Pump-of-High-Pressure?redirectedFrom=fulltext">Paper ↗</a>
+        </div>
+        <div class="card-desc" style="margin:0">
+          Ho S, Banerjee H, Foo YY, Godaba H, Aye WMM, Zhu J, Yap CH. <strong>Experimental Characterization of a Dielectric Elastomer Fluid pump and Optimizing Performance via Composite Materials.</strong> J Intell Mater Syst Struct., 2017 Dec;28(20):3054-65. <br>
+          <a class="btn btn-small" target="_blank" href="https://journals.sagepub.com/doi/abs/10.1177/1045389X17704921">Paper ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer>
+    <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+      <div>© Yap Lab</div>
+      <div class="row" style="gap:12px">
+        <a href="/YapLab.htm" style="color:var(--muted)">Back to Main Page</a>
+        <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

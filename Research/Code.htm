@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Research Details – Codes and Datasets</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="../Image/Imperial/favicon.ico">
+<style>
+  :root { --bg:#0d1117; --card:#101522; --fg:#f7f8fa; --muted:#a9b4c0; --border:#1b2846; --primary:#5aa7ff; --accent:#a78bfa }
+  * { box-sizing:border-box }
+  html,body { height:100% }
+  body { margin:0; font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+          background:linear-gradient(180deg,#0b0e14 0%,#0d1117 60%,#0b0e14 100%); color:var(--fg); padding-top:64px }
+  a { color:var(--primary); text-decoration:none }
+  a:hover { text-decoration:underline }
+  .container { max-width:1120px; margin:0 auto; padding:0 20px }
+  .nav { position:fixed; top:0; left:0; right:0; z-index:1000; border-bottom:1px solid var(--border);
+          backdrop-filter:saturate(130%) blur(10px); background:rgba(13,17,23,.6) }
+  .nav-inner { display:flex; align-items:center; justify-content:space-between; height:64px }
+  .brand { font-weight:700; letter-spacing:-.02em }
+  .menu { display:flex; gap:20px; font-size:14px }
+  .hero { padding:28px 0 }
+  .h1 { font-size:34px; line-height:1.15; margin:8px 0 }
+  .subtitle { color:var(--muted); font-size:16px; margin-top:6px }
+  .card { border:1px solid var(--border); background:linear-gradient(180deg,#101522,#0e1420);
+          border-radius:16px; padding:16px; box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25) }
+  .section-title { font-weight:800; font-size:22px; text-align:center; margin:4px 0 10px }
+  .card-desc { color:var(--muted); font-size:14px; margin:8px 0 12px; text-align: justify;}
+  .card-desc em {display: block; text-align: center; font-style: italic;}
+  .row { display:flex; gap:10px; align-items:center; flex-wrap:wrap }
+  .tag { font-size:11px; border:1px solid var(--border); padding:4px 8px; border-radius:999px;
+          color:#cbd5e1; background:linear-gradient(180deg,#0f1522,#0d1420) }
+  .btn { display:inline-flex; align-items:center; gap:8px; border:1px solid var(--border);
+          background:linear-gradient(180deg,#111827,#0f1623); padding:8px 12px; border-radius:999px;
+          font-size:14px; box-shadow:0 6px 16px rgba(0,0,0,.25) }
+  .btn-small { padding:6px 10px; font-size:13px }
+  .anchor { scroll-margin-top:76px }
+  .hr { height:1px; background:var(--border); margin:16px 0; border-radius:999px }
+  .backlink { font-size:14px }
+  .hero-img { border-radius:10px; border:1px solid var(--border); background:#0b1220 }
+  footer { border-top:1px solid var(--border); margin-top:28px; padding:22px 0; color:var(--muted) }
+  body {
+    background: 
+      linear-gradient(180deg, rgba(11,14,20,0.9), rgba(13,17,23,0.9)),
+      url("/Image/Imperial/IMPERIAL_Pattern_Reactive_6_varied_size_CMYK.png") repeat center center;
+    background-size: 1000px 800px;
+  }
+</style>
+</head>
+<body>
+
+<!-- ===== Top Nav ===== -->
+<div class="nav">
+  <div class="container nav-inner">
+    <div class="brand">Yap Lab</div>
+    <div class="menu">
+      <a class="backlink" href="/YapLab.htm">← Back to Main Page</a>
+      <a href="/YapLab.htm#research">Our Research</a>
+    </div>
+  </div>
+</div>
+
+<!-- ===== Header ===== -->
+<header class="hero">
+  <div class="container">
+    <h1 class="h1">Links to Our Codes and Datasets</h1>
+    <div class="subtitle">We welcome all to try them and give us feedback on them!</div>
+  </div>
+</header>
+
+<div class="container">
+
+  <div class="card">
+    <div class="card-title">B-Spline Fourier Motion Tracking</div>
+    <p class="card-desc">Traditional pair-wise image registration regularized with cyclic motion consistency<br>
+    Reference: Wiputra et al., Scientific reports, 10(1), 1-14.</p>
+    <a class="btn" href="https://github.com/WeiXuanChan/motionSegmentation" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Traditional Finite Element Model of the Heart</div>
+    <p class="card-desc">FEniCS Code for traditional Finite Element modelling of the cardiac ventricle biomechanics<br>
+    Reference: Green et al., Biomech Model Mechanobiol. 2024 Oct;23(5):1433-48.</p>
+    <a class="btn" href="https://github.com/WeiXuanChan/heartFEM" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">PINN Fluid Mechanics Prediction in Vessels</div>
+    <p class="card-desc">Physics-Informed Neural Network for predicting detailed fluid mechanics in a range of idealized vascular geometries.<br>
+    Reference: Chan et al., Comput Biol Med. 2025 May 1;190:110074.</p>
+    <a class="btn" href="https://github.com/WeiXuanChan/ModulusVascularFlow" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">PINN Fluid Mechanics Prediction in the Left Ventricle</div>
+    <p class="card-desc">Physics-Informed Neural Network for predicting detailed fluid mechanics in the cardiac left ventricle using 3D Doppler acquisitions as data guidance.<br>
+    Reference: Wong et al., Comput Methods Programs Biomed. 2025 Feb 13:108671.</p>
+    <a class="btn" href="https://github.com/HSW15/CSF-PINN" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Deep Learning Generation of Cranial Aneurysm Shapes (AneuG)</div>
+    <p class="card-desc">2-stage Generative AI model for creating synthetic bifurcation cranial aneurysm shapes for augmenting flow prediction models. Generation can be conditioned to produce shapes with specific clinically relevant morphological parameters.<br>
+    Reference: Ding et al. "Two-Stage Generative Model for Intracranial Aneurysm Meshes with Morphological Marker Conditioning." MICCAI 2025 [accepted June 2025]</p>
+    <a class="btn" href="https://github.com/anonymousaneug/AneuG.git" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Large CFD Dataset of Bifurcation Cranial Aneurysm</div>
+    <p class="card-desc">Large dataset of steady flow and pulsatile simulations, based on synthetic aneurysm shapes generated via AneuG<br>
+    Reference: TBD</p>
+    <a class="btn" href="https://huggingface.co/datasets/whding123/AneuG-Flow" target="_blank">Hugging Face Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">PINN Finite Element Model of the Left Ventricle (IMC-PINN-FE)</div>
+    <p class="card-desc">Fast Physics Informed Neural Network Algorithm for Finite Element Modelling of ventricular biomechanics, which constraints to adhere to imaged cardiac motions.<br>
+    Reference: TBD</p>
+    <a class="btn" href="https://github.com/SiyuMU/IMC_PINN_FE" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Deep Learning Prediction of Unloaded State of the Left Ventricle from Image Reconstruction (Load2UnNet)</div>
+    <p class="card-desc">Graph Attention Network to rapidly calculate the unloaded state 3D mesh of the left ventricle, from the 3D mesh at end-diastole and inputs of the end-diastolic pressure, cardiac stiffness scale, and helix angle configurations.<br>
+    Reference: TBD</p>
+    <a class="btn" href="https://github.com/SiyuMU/Loaded2UnNet" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Graph Harmonic Deformation Encoder for Cardiac Shapes Guided by Segmented Image Slices via Differential Slicing and Voxelization</div>
+    <p class="card-desc">Reconstruction of the 3D mesh of the heart’s shape using the graph harmonic mesh morphic approach, guided by slices of segmented image via the differentiable slicing and voxelization technique, the first truly differentiable direct supervision by image.<br>
+    Reference: Luo et al., arXiv preprint arXiv:2409.02070. 2024 Sep 3.</p>
+    <a class="btn" href="https://github.com/Luo-Yihao/GHDHeart" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Feedback Attention Image Registration for Echo/MRI Images</div>
+    <p class="card-desc">2D or 3D image registration with a special feedback attention mechanism that enhances performance.<br>
+    Reference: Hasan et al. Feedback Attention to Enhance Unsupervised Deep Learning Image Registration in 3D Echocardiography. IEEE Transactions on Medical Imaging. 2025 Jan 16.</p>
+    <a class="btn" href="https://github.com/kamruleee51/Feedback_DLIR" target="_blank">Github Link ↗</a>
+  </div>
+
+  <div class="card">
+    <div class="card-title">Temporal Attention Module for Enhancing Segmentation</div>
+    <p class="card-desc">2D or 3D image segmentation from medical images with temporal attention enhancement that is achieved with a small, light-weight, yet highly effective temporal attention module that can be flexibly added to a range of network architecture.<br>
+    Reference: Hasan et al., arXiv preprint arXiv:2501.14929. 2025 Jan 24.</p>
+    <a class="btn" href="#" target="_blank">Link (TB added) ↗</a>
+  </div>
+
+</div>
+
+<!-- ===== Footer ===== -->
+<footer>
+  <div class="container" style="display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap">
+    <div>© Yap Lab</div>
+    <div class="row" style="gap:12px">
+      <a href="mailto:c.yap@imperial.ac.uk" style="color:var(--muted)">Contact us</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
