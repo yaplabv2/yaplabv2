@@ -1,7 +1,7 @@
-# 🧪 YapLab Website 
-(Cardiovascular Biomechanics and A.I. Laboratory)
-
-This repository hosts the YapLab lab homepage, built with static HTML/CSS/JS.
+# 🔬 Cardiovascular Biomechanics and A.I. Laboratory
+Yap Lab Website
+📧 Welcome to connect with us: [c.yap@imperial.ac.uk](mailto:c.yap@imperial.ac.uk)
+(This repository hosts the YapLab lab homepage, built with static HTML/CSS/JS.)
 
 ---
 
