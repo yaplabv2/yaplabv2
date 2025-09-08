@@ -31,14 +31,14 @@ This repository hosts the YapLab lab homepage, built with static HTML/CSS/JS.
 ---
 
 ### 2. Storage and Organization
-Resource separation:
-•	/Image/ stores all images, further divided by purpose (Imperial, News, People, Research).
-Page grouping:
-•	YapLab.htm serves as the main landing page with navigation.
-•	/Research/ stores all detailed research subpages, each linked from the homepage.
-Naming convention:
-•	Research pages follow research-[block]-[sub](Topic).htm format for clarity.
-•	Images follow block-index.png for quick correspondence with research modules.
+-Resource separation:
+-	/Image/ stores all images, further divided by purpose (Imperial, News, People, Research).
+-Page grouping:
+-	YapLab.htm serves as the main landing page with navigation.
+-	/Research/ stores all detailed research subpages, each linked from the homepage.
+-Naming convention:
+-	Research pages follow research-[block]-[sub](Topic).htm format for clarity.
+-	Images follow block-index.png for quick correspondence with research modules.
 
 ---
 
