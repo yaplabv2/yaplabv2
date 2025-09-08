@@ -10,7 +10,7 @@ Yap Lab Website V2
 ### 📂 1. Overall Structure
 ```bash
 / (root directory)
-│── index.html / YapLab.htm       # Main landing page
+│── index.html                    # Main landing page
 │
 ├── Image/                        # Static image resources
 │   ├── Imperial/                 # Logos, branding, institutional assets
@@ -39,7 +39,7 @@ Yap Lab Website V2
   `/Image/` stores all images, further divided by purpose (`Imperial`, `News`, `People`, `Research`).  
 
 - **Page grouping**  
-  `YapLab.htm` serves as the main landing page with navigation.  
+  `index.htm` serves as the main landing page with navigation.  
   `/Research/` stores all detailed research subpages, each linked from the homepage.  
 
 - **Naming convention**  
@@ -50,7 +50,7 @@ Yap Lab Website V2
 
 ### 3. Modules in YapLab (Main Page)
 
-YapLab.htm is the central hub and includes:
+index.htm is the central hub and includes:
 
 1. **Navigation (Nav bar)**  
    - Links: Research, Code & Dataset, People, Publications, Openings  
