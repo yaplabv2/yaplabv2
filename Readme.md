@@ -1,40 +1,48 @@
-Website Structure Documentation (Yap Lab)
+🧪 YapLab Website (Cardiovascular Biomechanics and A.I. Laboratory)
 
-1. Overall Structure
+This repository hosts the YapLab lab homepage, built with static HTML/CSS/JS.
+
+---
+
+### 📂 1. Overall Structure
+```bash
 / (root directory)
-│── YapLab.htm                 # Main landing page
+│── index.html / YapLab.htm       # Main landing page
 │
-├── Image/                     # All static image resources
-│   ├── Imperial/              # Logos, branding, institutional assets
-│   ├── News/                  # News carousel images
-│   ├── People/                # Lab member portraits
-│   └── Research/              # Research-related figures/illustrations
+├── Image/                        # Static image resources
+│   ├── Imperial/                 # Logos, branding, institutional assets
+│   ├── News/                     # News carousel images
+│   ├── People/                   # Lab member portraits
+│   └── Research/                 # Research-related figures
 │
-├── Research/                  # Research detail pages
-│   ├── Image/                 # Figures for research subpages
-│   ├── Code.htm               # Code & Dataset page
-│   ├── research-1-1(...).htm  # Deep Learning Image Registration & Segmentation
-│   ├── research-1-3(...).htm  # Machine Learning in Biomechanics
-│   ├── research-2-1(...).htm  # Heart Function Evaluation
-│   ├── research-3-1(...).htm  # Fetal Heart Echo Processing
-│   ├── research-3-2(...).htm  # Virtual Reality in Fetal Echo
-│   ├── research-4-1(...).htm  # Embryonic Chick Heart Biomechanics
-│   ├── research-4-2(...).htm  # Zebrafish Embryonic Heart Biomechanics
-│   ├── research-5(...).htm    # Blood Pump Technologies
-│   └── research-7(...).htm    # Placenta Biomechanics
+├── Research/                     # Research detail pages
+│   ├── Image/                    # Figures for research subpages
+│   ├── Code.htm                  # Code & Dataset page
+│   ├── research-1-1(...).htm     # Deep Learning Image Registration & Segmentation
+│   ├── research-1-3(...).htm     # Machine Learning in Biomechanics
+│   ├── research-2-1(...).htm     # Heart Function Evaluation
+│   ├── research-3-1(...).htm     # Fetal Heart Echo Processing
+│   ├── research-3-2(...).htm     # Virtual Reality in Fetal Echo
+│   ├── research-4-1(...).htm     # Embryonic Chick Heart Biomechanics
+│   ├── research-4-2(...).htm     # Zebrafish Embryonic Heart Biomechanics
+│   ├── research-5(...).htm       # Blood Pump Technologies
+│   └── research-7(...).htm       # Placenta Biomechanics
+```
+---
 
+### 2. Storage and Organization
+Resource separation:
+•	/Image/ stores all images, further divided by purpose (Imperial, News, People, Research).
+Page grouping:
+•	YapLab.htm serves as the main landing page with navigation.
+•	/Research/ stores all detailed research subpages, each linked from the homepage.
+Naming convention:
+•	Research pages follow research-[block]-[sub](Topic).htm format for clarity.
+•	Images follow block-index.png for quick correspondence with research modules.
 
-2. Storage and Organization
-	Resource separation:
-	•	/Image/ stores all images, further divided by purpose (Imperial, News, People, Research).
-	Page grouping:
-	•	YapLab.htm serves as the main landing page with navigation.
-	•	/Research/ stores all detailed research subpages, each linked from the homepage.
-	Naming convention:
-	•	Research pages follow research-[block]-[sub](Topic).htm format for clarity.
-	•	Images follow block-index.png for quick correspondence with research modules.
+---
 
-3. Modules in YapLab (Main Page)
+### 3. Modules in YapLab (Main Page)
 
 YapLab.htm is the central hub and includes:
 	1.	Navigation (Nav bar)
@@ -60,7 +68,9 @@ YapLab.htm is the central hub and includes:
 	•	Copyright notice.
 	•	Contact email.
 
-4. Modules in Research Folder
+---
+
+### 4. Modules in Research Folder
 
 The /Research/ directory includes:
 	•	General resources
@@ -79,6 +89,7 @@ The /Research/ directory includes:
 
 Research Subpage Template (e.g., research-x-x)
 
+```bash
 research-x-x(Topic).htm
 │── Top Nav (Back + anchors)
 │── Hero (Title + Subtitle)
@@ -89,3 +100,4 @@ research-x-x(Topic).htm
 │── Section #2 (Method/Module B)
 │── Section #3 (Method/Module C)
 │── Footer (© Lab + Contact)
+```
