@@ -48,7 +48,7 @@
     .metric .num{font-variant-numeric:tabular-nums;font-size:28px;font-weight:700}
 
     /* ===== Card Base ===== */
-    .card{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);text-align: justify;text-justify: inter-word;}
+    .card{border:1px solid var(--border);background:linear-gradient(180deg,#243057,#0e1420);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:10px;box-shadow:0 1px 0 rgba(255,255,255,.03),0 30px 80px rgba(0,0,0,.25);text-align: justify;text-justify: inter-word;}
 
     /* ===== Big Card ===== */
     .card.big-card{grid-column:1/-1;align-items:center}
@@ -57,7 +57,7 @@
     .card.big-card.two .ml-grid{grid-template-columns:repeat(2,1fr);justify-content:center}
 
     /* ===== Mini Card ===== */
-    .card.mini{border:1px solid var(--border);background:linear-gradient(180deg,#101522,#0e1420);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
+    .card.mini{border:1px solid var(--border);background:linear-gradient(180deg,#aeb8d2,#0e1420);border-radius:14px;padding:14px;display:flex;flex-direction:column;gap:10px}
     .card.mini .mini-title{font-weight:700;font-size:15px;line-height:1.3;color:#fff}
     .card.mini .mini-img{width:100%;height:200px;border-radius:10px;object-fit:cover;border:1px solid var(--border)}
     .card.mini .mini-desc{margin:0;color:var(--muted);font-size:13px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden;text-align: justify;text-justify: inter-word;}
@@ -852,7 +852,7 @@
         - Constraining height keeps the page compact
         - Each year block starts with a .pub-year anchor whose id is "year-<value>"
         - The smooth scroll logic computes offset inside this container (not the page) -->
-      <div id="pubWindow" class="card" style="overflow:auto; max-height:380px; padding:12px">
+      <div id="pubWindow" class="card" style="overflow:auto; max-height:760px; padding:12px">
 
         <!-- ===== 2025 =====
            - data-year is a useful hook if you later auto-generate the year list
